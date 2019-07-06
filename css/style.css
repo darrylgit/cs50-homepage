@@ -1,0 +1,140 @@
+.navbar .nav-link {
+  font-size: 1.4rem;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.6rem;
+}
+
+#showcase {
+  background-image: linear-gradient(#343a40, #73808c);
+}
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-item img {
+  height: 450px;
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+  text-shadow: 1px 1px 0 #333, -1px 1px 0 #333, 1px -1px 0 #333,
+    -1px -1px 0 #333, 0px 1px 0 #333, 0px -1px 0 #333, -1px 0px 0 #333,
+    1px 0px 0 #333, 2px 2px 0 #333, -2px 2px 0 #333, 2px -2px 0 #333,
+    -2px -2px 0 #333, 0px 2px 0 #333, 0px -2px 0 #333, -2px 0px 0 #333,
+    2px 0px 0 #333, 1px 2px 0 #333, -1px 2px 0 #333, 1px -2px 0 #333,
+    -1px -2px 0 #333, 2px 1px 0 #333, -2px 1px 0 #333, 2px -1px 0 #333,
+    -2px -1px 0 #333;
+
+  -moz-text-shadow: 1px 1px 0 #333, -1px 1px 0 #333, 1px -1px 0 #333,
+    -1px -1px 0 #333, 0px 1px 0 #333, 0px -1px 0 #333, -1px 0px 0 #333,
+    1px 0px 0 #333, 2px 2px 0 #333, -2px 2px 0 #333, 2px -2px 0 #333,
+    -2px -2px 0 #333, 0px 2px 0 #333, 0px -2px 0 #333, -2px 0px 0 #333,
+    2px 0px 0 #333, 1px 2px 0 #333, -1px 2px 0 #333, 1px -2px 0 #333,
+    -1px -2px 0 #333, 2px 1px 0 #333, -2px 1px 0 #333, 2px -1px 0 #333,
+    -2px -1px 0 #333;
+
+  -webkit-text-shadow: 1px 1px 0 #333, -1px 1px 0 #333, 1px -1px 0 #333,
+    -1px -1px 0 #333, 0px 1px 0 #333, 0px -1px 0 #333, -1px 0px 0 #333,
+    1px 0px 0 #333, 2px 2px 0 #333, -2px 2px 0 #333, 2px -2px 0 #333,
+    -2px -2px 0 #333, 0px 2px 0 #333, 0px -2px 0 #333, -2px 0px 0 #333,
+    2px 0px 0 #333, 1px 2px 0 #333, -1px 2px 0 #333, 1px -2px 0 #333,
+    -1px -2px 0 #333, 2px 1px 0 #333, -2px 1px 0 #333, 2px -1px 0 #333,
+    -2px -1px 0 #333;
+}
+
+.carousel-caption p {
+  font-size: 2rem;
+}
+
+.image-right {
+  float: right;
+}
+
+#teaser {
+  position: relative;
+  min-height: 300px;
+  background: url("../img/radian.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  overflow: hidden;
+}
+
+#links .card {
+  height: 500px;
+  border: 3px solid #343a40;
+  border-radius: 15px;
+}
+
+#links .card-body {
+  margin-top: 150px;
+}
+
+#links #storeCard {
+  background: url("../img/montage3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#links #recipeCard {
+  background: url("../img/smoothie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#links a:hover {
+  -webkit-animation-name: outline-hover;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: outline-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes outline-hover {
+  from {
+    color: rgba(248, 249, 250);
+  }
+  to {
+    color: rgba(66, 70, 80);
+  }
+}
+
+@keyframes outline-hover {
+  from {
+    color: rgba(248, 249, 250);
+  }
+  to {
+    color: rgb(66, 70, 80);
+  }
+}
+
+@media (max-width: 479px) {
+  .carousel-inner h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  #collegiate {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
