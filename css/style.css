@@ -1,3 +1,9 @@
+/*
+===============================
+NAVBAR
+===============================
+*/
+
 .navbar .nav-link {
   font-size: 1.4rem;
 }
@@ -5,6 +11,12 @@
 .navbar .navbar-brand {
   font-size: 1.6rem;
 }
+
+/*
+===============================
+SHOWCASE
+===============================
+*/
 
 #showcase {
   background-image: linear-gradient(#343a40, #73808c);
@@ -18,6 +30,7 @@
   height: 450px;
 }
 
+/* Text outline */
 .carousel-caption h2,
 .carousel-caption p {
   text-shadow: 1px 1px 0 #333, -1px 1px 0 #333, 1px -1px 0 #333,
@@ -59,6 +72,8 @@
   background: url("../img/radian.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
   text-align: center;
   color: #fff;
 }
@@ -71,6 +86,12 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
+/*
+===============================
+LINK CARDS - HOMEPAGE
+===============================
+*/
 
 .card {
   overflow: hidden;
@@ -107,6 +128,40 @@
   animation-fill-mode: forwards;
 }
 
+.alt-header {
+  position: relative;
+  min-height: 300px;
+  background: url("../img/header.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+  text-align: center;
+  color: #fff;
+}
+
+#recipesGrid .card-footer {
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#recipesGrid .card-footer:hover {
+  color: red;
+}
+
+#recipesGrid a:hover {
+  text-decoration: none;
+  color: #666;
+}
+
+/*
+===============================
+ANIMATIONS
+===============================
+*/
 @-webkit-keyframes outline-hover {
   from {
     color: rgba(248, 249, 250);
@@ -125,6 +180,13 @@
   }
 }
 
+/*
+===============================
+MEDIA QUERIES
+===============================
+*/
+
+/* Carousel media queries */
 @media (max-width: 479px) {
   .carousel-inner h2 {
     font-size: 48px;
@@ -136,5 +198,212 @@
     border-radius: 10px;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Media queries: medium screens */
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  #recipe1 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe2 {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe3 {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe4 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe5 {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe6 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe7 {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe8 {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe9 {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe10 {
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe11 {
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe12 {
+    grid-row: 6 / span 1;
+    grid-column: 2 / span 1;
+  }
+}
+
+/* Media queries: large screens */
+@media (min-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  #recipe1 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe2 {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe3 {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+  }
+
+  #recipe4 {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe5 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe6 {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+  }
+
+  #recipe7 {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe8 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe9 {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+  }
+
+  #recipe10 {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe11 {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe12 {
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 1;
+  }
+}
+
+/* Media queries: very large screens */
+@media (min-width: 3000px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  #recipe1 {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe2 {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe3 {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+  }
+
+  #recipe4 {
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
+  }
+
+  #recipe5 {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe6 {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe7 {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+  }
+
+  #recipe8 {
+    grid-row: 2 / span 1;
+    grid-column: 4 / span 1;
+  }
+
+  #recipe9 {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  #recipe10 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  #recipe11 {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+  }
+
+  #recipe12 {
+    grid-row: 3 / span 1;
+    grid-column: 4 / span 1;
   }
 }

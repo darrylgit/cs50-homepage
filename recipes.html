@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Blender Bottle</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-2">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><strong>Blender</strong>Bottle</a
+        >
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-1">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item px-1">
+              <a href="shop.html" class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item px-1 active">
+              <a href="recipes.html" class="nav-link">Recipes</a>
+            </li>
+            <li class="nav-item px-1">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="recipes-header" class="p-5 alt-header">
+      <div class="dark-overlay">
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <h1 class="display-2">Recipes</h1>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                repellat culpa non odit fugiat quae atque vero recusandae
+                incidunt ex!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- GRID -->
+    <section id="recipesGrid" class="my-3">
+      <div class="container">
+        <div class="row">
+          <div class="col grid-container">
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 1"
+              data-image="img/shake1.jpg"
+            >
+              <div class="card recipe-box" id="recipe1">
+                <div class="card-body">
+                  <img
+                    src="img/shake1.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 1</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 2"
+              data-image="img/shake2.jpg"
+            >
+              <div class="card recipe-box" id="recipe2">
+                <div class="card-body">
+                  <img
+                    src="img/shake2.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 2</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 3"
+              data-image="img/shake3.jpg"
+            >
+              <div class="card recipe-box" id="recipe3">
+                <div class="card-body">
+                  <img
+                    src="img/shake3.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 3</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 4"
+              data-image="img/shake4.jpg"
+            >
+              <div class="card recipe-box" id="recipe4">
+                <div class="card-body">
+                  <img
+                    src="img/shake4.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 4</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 5"
+              data-image="img/shake5.jpg"
+            >
+              <div class="card recipe-box" id="recipe5">
+                <div class="card-body">
+                  <img
+                    src="img/shake5.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 5</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 6"
+              data-image="img/shake6.jpg"
+            >
+              <div class="card recipe-box" id="recipe6">
+                <div class="card-body">
+                  <img
+                    src="img/shake6.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 6</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 7"
+              data-image="img/shake7.jpg"
+            >
+              <div class="card recipe-box" id="recipe7">
+                <div class="card-body">
+                  <img
+                    src="img/shake7.jpg"
+                    alt=""
+                    class="img-fluid recipe-img8"
+                  />
+                </div>
+                <div class="card-footer">Shake 7</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 8"
+              data-image="img/shake8.jpg"
+            >
+              <div class="card recipe-box" id="recipe8">
+                <div class="card-body">
+                  <img
+                    src="img/shake8.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 8</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 9"
+              data-image="img/shake9.jpg"
+            >
+              <div class="card recipe-box" id="recipe9">
+                <div class="card-body">
+                  <img
+                    src="img/shake9.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 9</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 10"
+              data-image="img/shake10.jpg"
+            >
+              <div class="card recipe-box" id="recipe10">
+                <div class="card-body">
+                  <img
+                    src="img/shake10.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 10</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 11"
+              data-image="img/shake11.jpg"
+            >
+              <div class="card recipe-box" id="recipe11">
+                <div class="card-body">
+                  <img
+                    src="img/shake11.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 11</div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#recipeModal"
+              data-header="Shake 12"
+              data-image="img/shake12.jpg"
+            >
+              <div class="card recipe-box" id="recipe12">
+                <div class="card-body">
+                  <img
+                    src="img/shake12.jpg"
+                    alt=""
+                    class="img-fluid recipe-img"
+                  />
+                </div>
+                <div class="card-footer">Shake 12</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> BlenderBottle</p>
+            <small>(not actually though)</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade text-dark" id="recipeModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img
+                    src="img/shake1.jpg"
+                    alt=""
+                    class="img-fluid d-none d-lg-block mt-5 recipe-modal-image"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="modal-header">
+                    <h5 class="text-center recipe-modal-header"></h5>
+                    <button class="close" data-dismiss="modal">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laborum, deserunt!
+                    </p>
+                    <ul>
+                      <li>Ingredient 1</li>
+                      <li>Ingredient 2</li>
+                      <li>Ingredient 3</li>
+                      <li>Ingredient 4</li>
+                    </ul>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Neque, facere!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+
+      // Configure slider
+      $(".carousel").carousel({
+        interval: 3000,
+        pause: "hover"
+      });
+
+      // Modal config
+      $("#recipeModal").on("show.bs.modal", function(event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var shakeName = button.data("header"); // Extract info from data-* attributes
+        console.log("shakeName");
+        var imageSource = button.data("image");
+        var modal = $(this);
+        modal.find(".recipe-modal-header").text(shakeName);
+        modal.find(".recipe-modal-image").attr("src", imageSource);
+      });
+    </script>
+  </body>
+</html>
