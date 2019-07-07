@@ -140,7 +140,8 @@ LINK CARDS - HOMEPAGE
   color: #fff;
 }
 
-#recipesGrid .card-footer {
+#recipesGrid .card-footer,
+#shopGrid .card-footer a {
   text-decoration: none;
   text-align: center;
   color: #333;
@@ -148,7 +149,8 @@ LINK CARDS - HOMEPAGE
   font-size: 1.4rem;
 }
 
-#recipesGrid .card-footer:hover {
+#recipesGrid .card-footer:hover,
+#shopGrid .card-footer a:hover {
   color: red;
 }
 

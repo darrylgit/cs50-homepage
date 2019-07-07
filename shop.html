@@ -16,6 +16,12 @@
       integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Blender Bottle</title>
   </head>
@@ -70,6 +76,115 @@
       </div>
     </header>
 
+    <!-- SHOP GRID -->
+    <section id="shopGrid" class="my-3">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="card mb-2 p-1">
+              <a
+                href="img/series1.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+              >
+                <img src="img/series1.jpg" alt="" class="img-fluid" />
+              </a>
+
+              <div class="card-footer text-center">
+                <a href="#"
+                  >Just for Fun Series<i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-2 p-1">
+              <a
+                href="img/series2.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+              >
+                <img src="img/series2.jpg" alt="" class="img-fluid" />
+              </a>
+              <div class="card-footer text-center">
+                <a href="#"
+                  >Titanium Series <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-2 p-1">
+              <a
+                href="img/series3.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+              >
+                <img src="img/series3.jpg" alt="" class="img-fluid"
+              /></a>
+
+              <div class="card-footer text-center">
+                <a href="#"
+                  >Pro Stak Series <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <div class="card mb-2 p-1">
+              <a
+                href="img/series4.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+              >
+                <img src="img/series4.jpg" alt="" class="img-fluid"
+              /></a>
+              <div class="card-footer text-center">
+                <a href="#"
+                  >Loop Grip Series <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-2 p-1">
+              <a
+                href="img/series5.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+              >
+                <img src="img/series5.jpg" alt="" class="img-fluid"
+              /></a>
+
+              <div class="card-footer text-center">
+                <a href="#">
+                  Classic Series <i class="fas fa-shopping-cart"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-2 p-1">
+              <a
+                href="img/series6.jpg"
+                data-toggle="lightbox"
+                data-gallery="img-gallery"
+              >
+                <img src="img/series6.jpg" alt="" class="img-fluid" />
+              </a>
+              <div class="card-footer text-center">
+                <a href="#"
+                  >Titan Grip Series <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
     <footer id="main-footer" class="text-center p-4 bg-dark text-white">
       <div class="container">
@@ -97,14 +212,19 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs="
+      crossorigin="anonymous"
+    ></script>
     <script>
       //Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
 
-      // Configure slider
-      $(".carousel").carousel({
-        interval: 3000,
-        pause: "hover"
+      // Init Lightbox
+      $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
       });
     </script>
   </body>
